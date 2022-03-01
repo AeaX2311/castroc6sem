@@ -1,0 +1,119 @@
+table {
+    border-spacing: 1;
+    border-collapse: collapse;
+    background: #cadfca;
+    border-radius: 6px;
+    width: 70%;
+    margin: 0 auto;
+    position: relative;
+  }
+  table * {
+    position: relative;
+  }
+  table td, table th {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+  table thead tr {
+    height: 50px;
+    background-color: #add8ac;
+    font-size: 20px;
+    border-radius: 6px !important;
+    margin: 0 auto;
+    border-spacing: 1;
+    border-collapse: collapse;
+
+  }
+  table tbody tr {
+    height: 48px;
+    border-bottom: 1px solid #d8cbcb;
+  }
+
+tr:nth-child(even) {
+    background-color: #e6ece6;
+}
+
+  
+  @media screen and (max-width: 800px) and (min-width: 470px) {
+    table {
+      display: block;
+      width: 70%;
+    }
+
+    table > *, table tr, table td, table th {
+      display: block;
+    }
+
+    table tbody tr:first-child{
+        display: none;
+    }
+
+    table tbody tr {
+      height: auto;
+      padding: 3px 0;
+      text-align: justify;
+    }
+    table tbody tr td {
+      padding-left: 45%;
+      margin-bottom: 12px;
+    }
+    table tbody tr td:last-child {
+      margin-bottom: 0;
+    }
+    table tbody tr td:before {
+      position: absolute;
+      font-weight: 700;
+      width: 40%;
+      left: 10px;
+      top: 0;
+    }
+
+    table tbody tr td:nth-child(1):before { content: "Grado académico"; }
+    table tbody tr td:nth-child(2):before { content: "Años cursados"; }
+    table tbody tr td:nth-child(3):before { content: "Promedio"; }
+    table tbody tr td:nth-child(4):before { content: "Certificado"; }
+    table tbody tr td:nth-child(5):before { content: "Observaciones"; }
+  }
+
+  @media screen and (max-width: 469px) {
+    table {
+        display: block;
+        width: 98%;
+      }
+  
+      table > *, table tr, table td, table th {
+        display: block;
+      }
+  
+      table tbody tr:first-child{
+          display: none;
+      }
+  
+      table tbody tr {
+        height: auto;
+        padding: 3px 0;
+        text-align: justify;
+      }
+      table tbody tr td {
+        padding-left: 45%;
+        margin-bottom: 12px;
+      }
+      table tbody tr td:last-child {
+        margin-bottom: 0;
+      }
+      table tbody tr td:before {
+        position: absolute;
+        font-weight: 700;
+        width: 40%;
+        left: 10px;
+        top: 0;
+      }
+  
+      table tbody tr td:nth-child(1):before { content: "Grado académico"; }
+      table tbody tr td:nth-child(2):before { content: "Años cursados"; }
+      table tbody tr td:nth-child(3):before { content: "Promedio"; }
+      table tbody tr td:nth-child(4):before { content: "Certificado"; }
+      table tbody tr td:nth-child(5):before { content: "Observaciones"; }
+}
