@@ -1,0 +1,71 @@
+
+ul.acordeon li a {
+  display: block;
+  padding: 15px 0px 15px 0px;
+  background: rgb(68, 2, 2);
+  color: #eee;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #666;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: default;
+
+  max-width: 70%;
+  margin-left: 15%;
+}
+ul.acordeon li li a {
+    padding: 10px 0px 10px 0px;
+    background: rgb(175, 139, 139);
+    color: #000;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    max-width: 68%;
+    margin-left:17%;
+}
+body{
+  background:rgb(247, 237, 237);
+}
+li a i{
+ margin-right: 8px !important;
+}
+ul.acordeon,
+ul.acordeon * {
+margin: 0;
+padding: 0;
+border: 0;
+}
+ul.acordeon {
+margin: 10px auto;
+padding: 0;
+list-style: none;
+width: 100%;
+font-size: 18px;
+}
+ul.acordeon li {
+list-style: none;
+}
+
+ul.acordeon li ul {
+max-height: 0;
+margin: 0;
+padding: 0;
+list-style: none;
+overflow: hidden;
+transition: .3s all ease-in;
+}
+
+ul.acorc li li:last-child a {
+border-bottom: 0;
+}
+ul.acordeon li:hover ul {
+max-height: 300px;
+transition: .3s all ease-in;
+}
+ul.acordeon li li a:hover {
+background: rgb(196, 50, 50);
+color: #fff;
+}
+
