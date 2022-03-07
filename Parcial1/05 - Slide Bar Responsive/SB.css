@@ -1,0 +1,221 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+div.sidebar {
+  position: fixed;
+  background-color:rgba(68, 2, 2, 0.925);
+  width: 250px;
+  height: 100%;
+  overflow: auto;
+}
+/*
+a {
+  display: block;
+  text-decoration: none;
+  padding: 5px;
+}
+*/
+div.content {
+  background-color: rgb(124, 115, 115);;
+  margin-left: 250px;
+  padding-top: 40px;
+  padding-left: 40px;
+  height: 2000px;
+}
+
+div.content label i{
+  cursor: pointer;
+  font-size: x-large;
+}
+
+div.content label label{
+  cursor: default;
+  font-size: x-large;
+  font-weight: bold;
+  text-decoration-color: white;
+  width: 100%;
+  margin-left: calc(100% - 418px);
+}
+
+div.content p {
+  padding-top: 15px;
+  padding-left: 10px;
+  font-size: large;
+}
+
+.contenidoOpcion { 
+  display: none;
+  margin-top: 50px;
+  background-color: #ccc;
+  width: calc(100% - 40px);
+  height: 1850px;
+  border-radius: 6px;
+}
+
+#opUsuario:target,
+#opMotores:target,
+#opMonitoreo:target,
+#opBitacoras:target,
+#opFacturar:target,
+#opLiberar:target,
+#opEnlistar:target,
+#opGenerar:target,
+#opProductos:target,
+#opVentas:target,
+#opMercancia:target,
+#opProveedores:target,
+#opFracciones:target,
+#opClientes:target { 
+  display: block;
+}
+
+input {display: none;}
+
+input:checked + .sidebar{
+  width:0px;
+}
+
+input:checked ~ .content {
+  margin-left: 0px;
+}
+
+li a i{
+  margin-right: 8px !important;
+  margin-left: 5% !important;
+}
+
+ul.acordeon,
+ul.acordeon * {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+ul.acordeon {
+  margin: 10px auto;
+  padding: 0;
+  list-style: none;
+  width: 100%;
+  font-size: 18px;
+}
+
+ul.acordeon li {
+  list-style: none;
+}
+
+ul.acordeon li a {
+  display: block;
+  padding: 15px 0px 15px 0px;
+  background: rgb(68, 2, 2);
+  color: #eee;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #666;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: default;
+  max-width: 100%;
+}
+
+ul.acordeon li li a {
+  padding: 10px 0px 10px 15px;
+  background: rgb(175, 139, 139);
+  color: #000;
+  font-size: 16px;
+  border: 0;
+  border-bottom: 1px solid #ccc;
+  box-sizing: border-box;
+  cursor: pointer;
+  max-width: 98%;
+  margin-left:2%;
+}
+
+ul.acordeon li ul {
+  max-height: 0;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  transition: .4s all ease-in;
+}
+
+ul.acordeon li:hover ul {
+  max-height: 300px;
+  transition: .4s all ease-in;
+}
+
+ul.acordeon li li a:hover {
+  background: rgb(196, 50, 50);
+  color: #fff;
+}
+
+ul.acorc li li:last-child a {
+  border-bottom: 0;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 601px){
+  div.sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+ 
+  div.content {
+    margin-left: 0;
+  }
+
+  ul.acordeon li a{
+    width: calc(100% / 4);
+    float: left;
+  }
+  
+  ul.acordeon li li a {
+    display: none;/*F por el menu desplegable:(*/
+  }
+
+  input {display: none;}
+
+  input:checked + .sidebar{
+    height:0px;
+  }
+}  
+
+@media screen and (max-width: 600px) {
+  .sidebar a {
+    float: none;
+    text-align: center;
+  }
+
+  div.sidebar {
+    position: relative;
+    width: 100%;
+    height: auto;
+  }
+ 
+  div.content {
+    margin-left: 0;
+  }
+
+  input:checked + .sidebar{
+    height:0px;
+  }
+
+  ul.acordeon li a{
+    width: 100%;
+  }
+
+  ul.acordeon li li a {
+    padding: 10px 0px 10px 15px;
+    background: rgb(175, 139, 139);
+    color: #000;
+    font-size: 16px;
+    border: 0;
+    border-bottom: 1px solid #ccc;
+    box-sizing: border-box;
+    cursor: pointer;
+    max-width: 98%;
+    margin-left:2%;
+  }
+}
