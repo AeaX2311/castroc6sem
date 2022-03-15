@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Alan Castro</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+    <style>
+        table{
+            width: 70%;
+        }
+        table, th, td {
+            border: 1px solid black;
+            border-collapse: collapse;
+        }
+        th, td {
+            padding: 10px;
+        }
+        tr:nth-child(even) {
+            background-color: #F2FFF1;
+        }
+    </style>
+<body>
+    <div style="text-align: center;">
+        <h1>Flex Box</h1>
+        <h3>Alan Abiud Castro Cruz - 19100159</h3>
+        
+        <hr style="width: 80%;"/><br/>
+
+        <p style="width: 70%; margin-left: 15%;">
+            Al contenedor principal en un esquema Flexbox es al que le asignamos "display: flex". Esta propiedad hace que cambien las reglas con las cuales sus hijos van a ser representados en la página.
+        </p>
+
+        <table style="margin: 0 auto;">
+            <thead><th colspan="5">Flex Box Padre</th> </thead>
+
+            <tbody>
+                <tr>                    
+                    <th style="width: 20%;">Propiedad</th>
+                    <th style="width: 50%;">Funcionalidad</th>
+                    <th style="width: 30%;">Valores que puede tomar</th>
+                </tr>
+                <tr>                    
+                    <td>flex-direction</td>
+                    <td>Define la direcion del flujo en que se colocan los elementos.</td>
+                    <td>row, row-reverse, column, column-reverse</td>
+                </tr>
+                <tr>                    
+                    <td>flex-wrap</td>
+                    <td>Indica si queremos saltos de linea en los elementos colocados en el contenedor.</td>
+                    <td>nowrap, wrap, wrap-reverse</td>
+                </tr>
+                <tr>                    
+                    <td>flex-flow</td>
+                    <td>Es la combinacion de flex-direction y flex-wrap</td>
+                    <td>row nowrap, row wrap ...</td>
+                 </tr>
+                 <tr>                    
+                    <td>justify-content</td>
+                    <td>Indica como se colocaran los justificados y margenes de los items</td>
+                    <td>flex-start, flex-end, center, space-between, space-around</td>
+                 </tr>
+                 <tr>                    
+                    <td>align-items</td>
+                    <td>Se alinean los elementos con respecto al eje secundario y no al principal</td>
+                    <td>flex-start, flex-end, center, stretch, baseline</td>
+                 </tr>
+                 <tr>                    
+                    <td>align-content</td>
+                    <td>Alinea y separa las filas en el eje secundario</td>
+                    <td>flex-start, flex-end, center, stretch, space-between, space-around</td>
+                 </tr>
+            </tbody>
+        </table>
+
+        <br/>
+
+        <table style="margin: 0 auto;">
+            <thead><th colspan="5">Flex Box Hijo</th> </thead>
+
+            <tbody>
+                <tr>                    
+                    <th style="width: 20%;">Propiedad</th>
+                    <th style="width: 50%;">Funcionalidad</th>
+                    <th style="width: 30%;">Valores que puede tomar</th>
+                </tr>
+                <tr>                    
+                    <td>flex-grow</td>
+                    <td>Indica el factor de crecimiento del item respecto al resto</td>
+                    <td>Numeros</td>
+                </tr>
+                <tr>                    
+                    <td>flex-shrink</td>
+                    <td>Indica el factor de decrecimiento del item del resto</td>
+                    <td>Numero</td>
+                </tr>
+                <tr>                    
+                    <td>flex-basis</td>
+                    <td>Tamanio base de los items antes de aplicar una variacion</td>
+                    <td>size o content</td>
+                 </tr>
+                 <tr>                    
+                    <td>order</td>
+                    <td>Peso que indica el orden de aparicion de los items</td>
+                    <td>Numero</td>
+                 </tr>
+            </tbody>
+        </table>
+
+        <br/><hr style="width: 80%;"/>
+    </div>
+</body>
+</html>
