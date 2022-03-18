@@ -1,0 +1,172 @@
+* {
+  box-sizing:border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(124, 115, 115);;
+}
+
+.contenedor {
+  width: 100%;
+  height: 115vw;
+  align-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+}
+
+.content {
+  font-weight: bold;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;    
+}
+
+.content label {
+  text-align: right;
+  font-size: x-large;
+  font-weight: bold;
+  color: white;
+  width: 100%;
+  display: flex;
+  flex-direction: column;    
+}
+
+div.content p {
+  padding-top: 15px;
+  padding-left: 10px;
+  font-size: large;
+  text-align:justify;
+}
+
+.contenidoOpcion{
+  display: none;
+  margin-top: 22px;
+  background-color: #ccc;
+  width: 100%;
+  height: 100%;
+  border-radius: 6px;
+}
+
+div.sidebar {
+  float: left;
+  background-color:rgba(68, 2, 2, 0.925);
+  width: 250px;
+  height: 100%;
+  overflow: auto;
+}
+
+a {
+  display: block;
+  padding: 15px 0px 15px 0px;
+  background: rgb(68, 2, 2);
+  color: #eee;
+  border-bottom: 1px solid #000;
+  border-top: 1px solid #666;
+  text-decoration: none;
+  box-sizing: border-box;
+  cursor: pointer;
+  max-width: 100%;
+}
+
+.sidebar > a:hover {
+  background-color: rgba(212, 26, 26, 0.274);  
+  border-left: 15px solid transparent;
+  transition: .4s all ease-in;
+  color: #eee;
+}
+
+div.content {
+  float:left;
+  width:calc(100% - 250px);
+  background-color: rgb(124, 115, 115);;
+  padding: 16px;
+  height: 100%;
+}
+
+.contenidoOpcion { display: none; }
+
+#opUsuario:target,
+#opMotores:target,
+#opMonitoreo:target,
+#opBitacoras:target { 
+  display: block;
+}
+
+@media screen and (max-width: 1200px) and (min-width: 701px){
+  div.sidebar {
+    float: none;
+    width: 100%;
+    height: 85px;
+  }
+
+  a {
+    float: left;
+    padding: 30px;
+    width: calc(100% / 4);
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+  }
+  
+  div.content {
+    margin-left: 0;
+    width: 100%;
+  }
+  
+  .sidebar > a:hover {
+    border-left: 0px solid transparent;           
+    background-color: rgba(212, 26, 26, 0.274);  
+    border-top: 15px solid transparent;
+    transition: .4s all ease-in;
+    color: #eee;
+  }
+
+  .content>.contenidoOpcion{
+    width: 100%;
+    height: 97%;
+  }
+
+  .contenedor {
+    width: 90%;
+    height: 115vw;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin-left: 5%;
+    margin-top: 2%;
+  }
+}
+  
+@media screen and (max-width: 700px) {
+  .sidebar a {
+    text-align: center;
+    width: 100%;
+  }
+
+  a {
+    text-align: center;
+  }
+
+  div.sidebar {
+    float:none;
+    text-align: center;
+    width: 100%;
+    height: 300px;
+    flex-direction: column;
+  }
+  
+  .contenedor{
+    flex-direction: column;
+    height: 100vh;
+  }
+
+  div.content {
+    margin-left: 0;
+    width: 100%;
+  }
+}
