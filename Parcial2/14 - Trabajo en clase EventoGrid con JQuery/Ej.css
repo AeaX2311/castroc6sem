@@ -1,0 +1,31 @@
+.cc{
+  background-color: rgb(139, 37, 37)!important;
+}
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+div.contenedor {
+    width: 100vw;
+    height: 100vh;
+
+    background-color: white;
+    display: grid;
+    grid-template-columns: 25% 25% 25%;
+    grid-template-rows: 25% 25% 25%;
+    justify-content: center;
+    align-content: center;
+    justify-items: center;
+    align-items: center;
+    grid-auto-flow: dense;
+}
+
+div.caja {
+  background-color: blue;
+  text-align: center;
+  width: 100px ;
+}
+
