@@ -1,6 +1,4 @@
 # Ajax
-___ 
-<br>
 ### Asincronia Javcript y XML
 
 JavaScript es un lenguaje de programacion que gestiona contenidos dinamicos entre un sitio web y el usuario, por otro lado, xl nos ayuda a contener y transportar datos en una pagina web.
