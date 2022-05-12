@@ -9,6 +9,7 @@ $(document).ready(function() {
         }
     }) 
 
+
     $('#btnApodo').click(function(){
         var scriptPhp = new XMLHttpRequest();
 
@@ -26,4 +27,5 @@ $(document).ready(function() {
         scriptPhp.open("GET", "Componentes.php", true);
         scriptPhp.send();
     })
+
 });
