@@ -23,7 +23,7 @@
 
 <body>
     <div class="container">
-        <form name="registroForm" class="form">
+        <form name="registroForm" class="form needs-validation" novalidate>
 
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
@@ -39,9 +39,9 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup" style="align-self:  right;">
                         <div class="navbar-nav">
-                            <a class="nav-link" href="Index.html">Inicio</a>
-                            <a class="nav-link" aria-current="page" href="Registro.html">Nuevo usuario</a>
-                            <a class="nav-link" href="Listado.html">Listado de usuarios</a>
+                            <a class="nav-link" href="Index.html"><i class="fa-solid fa-house-chimney"></i>  Inicio</a>
+                            <a class="nav-link" aria-current="page" href="Registro.html"><i class="fa-solid fa-square-plus"></i>  Nuevo usuario</a>
+                            <a class="nav-link" href="Listado.html"><i class="fa-solid fa-rectangle-list"></i>  Listado de usuarios</a>
                         </div>
                     </div>
                 </div>
@@ -49,132 +49,132 @@
             <br />
 
             <div class="caja">
-
                 <br />
                 <div id="heade">
                     <h1 class="h3">Registrar nuevo usuario</h1>
                 </div>
-                <hr />
-                <br />
+                <hr /> <br />
+
                 <div class="subCaja">
-
-                
-                <div class="row">
-                    <label for="parNombre" class="col-form-label col-sm-12 col-md-2 col-lg-1">Nombre:</label>
-                    <div class="col-sm-12 col-md-10 col-lg-5">
-                        <input id="parNombre" type="text" class="form-control"
-                            placeholder="Nombre Ap Paterno Ap Materno" required>
-                        <div class="valid-feedback">
-                            Looks good!
-                        </div>
-                        <div class="invalid-feedback">
-                            Looks bad!
-                        </div>
-
-                    </div>
-
-                    <label for="parEmail" class="col-form-label col-sm-12 col-md-4 col-lg-2">Correo electronico:</label>
-                    <div class="col-sm-12 col-md-8 col-lg-4">
-                        <input id="parEmail" type="email" class="form-control" placeholder="P Ej. alan@19100159.com" />
-                    </div>
-                </div>
-
-                <div class="row">
-                    <label for="parContra" class="col-form-label col-sm-12 col-md-2 col-lg-1">Contraseña:</label>
-                    <div class="col-sm-12 col-md-10 col-lg-4">
-                        <input id="parContra" type="password" class="form-control" placeholder="Contraseña" />
-                    </div>
-
-                    <label for="parApodo" class="col-form-label col-sm-12 col-md-3 col-lg-1">Apodo:</label>
-                    <div class="col-sm-12 col-md-9 col-lg-3">
-                        <input id="parApodo" type="text" class="form-control" placeholder="P.Ej: AeaX" />
-                    </div>
-
-                    <div class="col-sm-12 col-md-12 col-lg-3">
-                        <div class="form-check">
-                            <label class="form-check-label">
-                                <input id="parMayorEdad" class="form-check-input" type="checkbox">Soy mayor de
-                                edad</input>
-                            </label>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row">
-                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
-                        <label for="parMunicipio" class="control-label">Municipio:</label>
-                        <input id="parMunicipio" type="text" class="form-control" placeholder="P Ej. Nuevo Laredo" />
-                    </div>
-                    <div class="form-group col-sm-12 col-md-6 col-lg-4">
-                        <label for="parEstado">Estado:</label>
-                        <input id="parEstado" type="text" class="form-control" placeholder="P Ej. Tamaulipas" />
-                    </div>
-
-                    <div class="form-group col-sm-12 col-md-4 col-lg-3">
-                        <label for="parCP">Codigo postal:</label>
-                        <input id="parCP" type="text" class="form-control" placeholder="P Ej. 88000" />
-                    </div>
-                    <div class="form-group col-sm-2 col-md-2 col-lg-1">
-                        <a class="link-secondary"
-                            href="https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/Descarga.aspx">No conozco
-                            mi CP</a>
-                    </div>
-                </div>
-
-                <div class="form-group row">
-                    <div class="col-sm-9">
-                        <button id="btnRegistrar" type="submit" class="btn btn-success col-sm-12">Registrarse</button>
-                    </div>
-                    <div class="col-sm-3">
-                        <button id="btnLimpiar" type="button" class="btn btn-warning col-sm-12">Limpiar</button>
-                    </div>
-                </div>
-
-
-                <div id="msjExito" class="modal fade" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Completado!</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+                    <div class="row">
+                        <div class="form-group col-sm-12 col-md-6 col-lg-6">
+                            <label for="parNombre">Nombre:</label>
+                            <input id="parNombre" type="text" class="form-control"
+                                placeholder="Nombre Ap Paterno Ap Materno" required>
+                            <div class="invalid-feedback">
+                                El nombre es necesario.
                             </div>
-                            <div class="modal-body">
-                                Datos guardados exitosamente!
-                            </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                                <button type="button" class="btn btn-primary">OK</button>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-6">
+                            <label for="parEmail">Correo electronico:</label>
+                            <input id="parEmail" type="email" class="form-control"
+                                placeholder="P Ej. alan@19100159.com" required>
+                            <div class="invalid-feedback">
+                                El correo electronico es necesario.
                             </div>
                         </div>
                     </div>
-                </div>
-                <div id="msjNoEncontrado" class="modal fade" tabindex="-1" role="dialog"
-                    aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-                    <div class="modal-dialog modal-dialog-centered" role="document">
-                        <div class="modal-content">
-                            <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLongTitle">Advertencia</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
-                                    <span aria-hidden="true">&times;</span>
-                                </button>
+
+                    <div class="row">
+                        <div class="col-sm-12 col-md-6 col-lg-5">
+                            <label for="parContra">Contraseña:</label>
+                            <input id="parContra" type="password" class="form-control" placeholder="Contraseña" required>
+                            <div class="invalid-feedback">
+                                Favor de ingresar una contraseña de al menos 8 caracteres
                             </div>
-                            <div class="modal-body">
-                                El correo que se esta bucando no fue encontrado, favor de verificar su existencia.
+                        </div>
+
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <label for="parApodo">Apodo:</label>
+                            <input id="parApodo" type="text" class="form-control" placeholder="P.Ej: AeaX" />
+
+                        </div>
+                        <div class="col-sm-12 col-md-12 col-lg-3">
+                            <label></label>
+                            <div class="form-check">
+                                <label class="form-check-label">
+                                    <input id="parMayorEdad" class="form-check-input" type="checkbox">Soy mayor de
+                                    edad</input>
+                                </label>
                             </div>
-                            <div class="modal-footer">
-                                <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                            <label for="parMunicipio" class="control-label">Municipio:</label>
+                            <input id="parMunicipio" type="text" class="form-control"
+                                placeholder="P Ej. Nuevo Laredo" />
+                        </div>
+                        <div class="form-group col-sm-12 col-md-6 col-lg-4">
+                            <label for="parEstado">Estado:</label>
+                            <input id="parEstado" type="text" class="form-control" placeholder="P Ej. Tamaulipas" />
+                        </div>
+
+                        <div class="form-group col-sm-12 col-md-12 col-lg-3">
+                            <label for="parCP">Codigo postal:</label>
+                            <input id="parCP" type="text" class="form-control" placeholder="P Ej. 88000" />
+                        </div>
+                        <div class="form-group col-sm-12 col-md-12 col-lg-1">
+                            <a class="link-secondary"
+                                href="https://www.correosdemexico.gob.mx/SSLServicios/ConsultaCP/Descarga.aspx">No conozco mi CP</a>
+                        </div>
+                    </div>
+
+                    <div class="form-group row">
+                        <div class=" col-sm-12 col-md-0 col-lg-2""></div>
+                        <div class="col-sm-12 col-md-6 col-lg-4"">
+                                <button id="btnRegistrar" type="submit"
+                                class="btn btn-success col-sm-12"><i class="fa-solid fa-floppy-disk"></i>  Registrarse</button>
+                        </div>
+                        <div class="col-sm-12 col-md-6 col-lg-4">
+                            <button id="btnLimpiar" type="button" class="btn btn-warning col-sm-12"><i class="fa-solid fa-trash-can"></i>  Limpiar</button>
+                        </div>
+                    </div>
+
+                    <div id="msjExito" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Completado!</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    Datos guardados exitosamente!
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                                    <button type="button" class="btn btn-primary">OK</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="msjNoEncontrado" class="modal fade" tabindex="-1" role="dialog"
+                        aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                        <div class="modal-dialog modal-dialog-centered" role="document">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLongTitle">Advertencia</h5>
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+                                        <span aria-hidden="true">&times;</span>
+                                    </button>
+                                </div>
+                                <div class="modal-body">
+                                    El correo que se esta bucando no fue encontrado, favor de verificar su existencia.
+                                </div>
+                                <div class="modal-footer">
+                                    <button type="button" class="btn btn-primary" data-dismiss="modal">Cerrar</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
+                <img src="Recursos/newUser.svg" style="margin-top: 1%; width: 50%;">
             </div>
-
-            </div>
-
-
         </form>
         <div>
 </body>

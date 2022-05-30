@@ -1,14 +1,21 @@
-.caja{
+body {
+    background: rgb(0, 66, 87);
+}
+.caja {
     background-color: rgb(229, 235, 238);
     width: 100%;
     min-height: 90vh;
     text-align: center;
 }
 .navbar {
-    min-height: 5vh;
+    min-height: 70px;
     max-height: 5vh;
 }
 .subCaja {
     width: 90%; 
     margin-left: 5%;
+}
+.container-fluid {
+    max-height: 5vh !important;
+
 }
