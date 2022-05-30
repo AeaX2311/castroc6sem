@@ -13,7 +13,7 @@ $(document).ready(function() {
 
     $('#btnRegistrar').click(function() {
        
-            $('#msjExito').modal('show');                          
+//$('#msjExito').modal('show');                          
     }) 
 
     function refrescar(objeto) {
