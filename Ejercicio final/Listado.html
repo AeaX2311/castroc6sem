@@ -63,12 +63,11 @@
 
                 <div class="subCaja" style="text-align: left;">
                     <div class="table-responsive">
-                        <!-- table-striped -->
                         <table class="table table-hover " id="listaUsuarios">
                             <thead>
                                 <tr>
-                                    <th scope="col">Correo</th>
                                     <th scope="col">Nombre</th>
+                                    <th scope="col">Correo</th>
                                 </tr>
                             </thead>
                             <tbody class="searchable">
@@ -82,7 +81,7 @@
             <div id="gpEditar" class="caja">
                 <br />
                 <div id="heade">
-                    <h1 class="h3">Editar usuario</h1>
+                    <h1 class="h3">Modificacion usuario</h1>
                 </div>
                 <hr /> <br />
 
@@ -137,12 +136,14 @@
                     </div>
 
                     <div class="form-group row">
-                        <div class=" col-sm-12 col-md-3 col-lg-4""></div>
-                        <div class="col-sm-12 col-md-6 col-lg-4"">
-                                <button id="btnActualizar" type="submit"
-                                class="btn btn-success col-sm-12"><i class="fa-solid fa-floppy-disk"></i>  Guardar</button>
+                        <div class=" col-sm-12 col-md-1 col-lg-2""></div>
+                        <div class="col-sm-12 col-md-5 col-lg-4"">
+                            <button id="btnActualizar" type="submit" class="btn btn-success col-sm-12"><i class="fa-solid fa-floppy-disk"></i>  Guardar modificaciones</button>
                         </div>
-                    </div>
+                        <div class=" col-sm-12 col-md-5 col-lg-4"">
+                            <button id="btnEliminar" type="submit" class="btn btn-danger col-sm-12"><i class="fa-solid fa-user-xmark"></i>  Eliminar usuario</button>
+                        </div>
+                    </div> 
 
                     <div id="msjExito" class="modal fade" tabindex="-1" role="dialog"
                         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">

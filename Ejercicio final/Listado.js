@@ -7,8 +7,8 @@ $(document).ready(function() {
                 "dataSrc" : "data"
             },
             columns: [
-                { data: "correoElectronico" },
                 { data: "nombre" },
+                { data: "correoElectronico" },
             ],
             scroller: true,
             deferRender: true,
@@ -44,6 +44,15 @@ $(document).ready(function() {
           cp        : $('#parCPE').val(),
           mayor     : document.getElementById("parMayorEdadE").checked ? 1 : 0
         }, null, 'json');
+    });
+
+    $('#btnEliminar').click( function() {
+        $.post('Delete.php', { 
+          correo    : $('#parEmailE').val()
+        }, null, 'json');
+
+        ocultar("gpEditar");
+        mostrar("gpLista");
     });
 
     function refrescar(objeto) {

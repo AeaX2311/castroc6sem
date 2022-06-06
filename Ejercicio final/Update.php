@@ -11,7 +11,6 @@
         "mayorEdad" => $_POST['mayor']
     );
 
-    // echo $usuario["correo"];
     $conexion = conectarBD();
 
     $query = 
