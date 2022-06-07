@@ -12,7 +12,7 @@ $(document).ready(function() {
     }) 
 
     $('#btnRegistrar').click( function() {
-      $.post('Insert.php', { 
+      var val = $.post('Insert.php', { 
         nombre    : $('#parNombre').val(), 
         correo    : $('#parEmail').val(),
         contra    : $('#parContra').val(),
@@ -22,6 +22,8 @@ $(document).ready(function() {
         cp        : $('#parCP').val(),
         mayor     : document.getElementById("parMayorEdad").checked ? 1 : 0
       }, null, 'json');
+
+      console.log(val)
     });
 
   (function () {

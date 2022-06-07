@@ -44,5 +44,11 @@
         $stmt -> bindValue(':estado', $usuario["estado"]);
         $stmt -> bindValue(':cp', $usuario["codigoPostal"]);
         $stmt -> bindValue(':mayor', $usuario["mayorEdad"]);
-    $stmt -> execute();
+    try {
+        $stmt -> execute();
+    } catch (PDOException $e) {
+        echo json_encode(-1);
+    }
+
+    echo json_encode(1);
 ?>
